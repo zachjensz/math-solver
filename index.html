@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Visual Math Solver</title>
+		<style>
+			:root {
+				--background: #fff;
+				--backgroundAlt: #eee;
+				--text: #222;
+			}
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--background: #222;
+					--backgroundAlt: #333;
+					--text: #fff;
+				}
+			}
+			* {
+				box-sizing: border-box;
+			}
+			::selection {
+				background-color: red;
+				color: white;
+			}
+			body {
+				background-color: var(--background);
+				color: var(--text);
+				min-width: 100vw;
+				min-height: 100vh;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script type="module" src="/src/main.js"></script>
+	</body>
+</html>
