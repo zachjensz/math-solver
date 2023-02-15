@@ -1,0 +1,59 @@
+:root {
+	--background: #fff;
+	--backgroundAlt: #eee;
+	--text: #222;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #222;
+		--backgroundAlt: #333;
+		--text: #fff;
+	}
+}
+* {
+	box-sizing: border-box;
+}
+::selection {
+	background-color: red;
+	color: white;
+}
+html, body {
+	height: 100%;
+}
+body {
+	display: grid;
+	place-content: center;
+	margin: 0;
+	background-color: var(--background);
+	color: var(--text);
+	font-family: system-ui, sans-serif;
+	font-size: 2rem;
+}
+input,
+output,
+button {
+	all: unset;
+	display: block;
+	background-color: var(--text);
+	color: var(--background);
+	padding: 0.5em;
+	margin: 0.25em 0;
+	border-radius: 4px;
+}
+input, output {
+	min-width: 28ch;
+	width: fit-content;
+}
+button {
+	user-select: none;
+	padding: 0.5em 1.5em;
+	margin: 1rem auto;
+}
+button:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+input:focus,
+button:focus {
+	outline: 6px solid red;
+}
