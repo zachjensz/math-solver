@@ -40,6 +40,6 @@ function calc({ operation, operand1, operand2 }) {
 		case '/':
 			return number1 / number2
 		case '^':
-			return number1 ^ number2
+			return number1 ** number2
 	}
 }
